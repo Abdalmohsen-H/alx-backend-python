@@ -2,10 +2,10 @@
 """ task 0 : async generator Module doc. """
 import asyncio
 import random
-from typing import async_generator
+from typing import Generator
 
 
-async def async_generator() -> async_generator[float, None, None]:
+async def async_generator() -> Generator[float, None, None]:
     """ func documentation here just random gen. 
     The return type of generator functions can be
     annotated by the generic type Generator[yield_type,
