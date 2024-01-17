@@ -12,7 +12,7 @@ async def measure_runtime() -> float:
     generator """
     start_timestamp = time.perf_counter()
     await asyncio.gather(async_comp_gen(), async_comp_gen(), async_comp_gen(),
-                        async_comp_gen()
+                         async_comp_gen()
                          )
     # or
     # jobs = [async_comp_gen() for _ in range(4)]
